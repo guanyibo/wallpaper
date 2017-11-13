@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>壁纸切换</title>
+	<meta charset="utf-8">
+	<style>
+	    body{
+	    	margin:0;
+	    	background:url(images/timg.jpg);
+            background-size: cover;
+	    }
+	    .iphonex{
+         width:660px;
+         height:650px;
+         margin:23px auto;
+	    }
+	    .content{
+	    	width:231px;
+	    	height:490px;
+	    	background:#368;
+	    	margin:0 auto;
+	    	border-radius:30px;
+	    	border:6px solid black;
+	    	background:url(images/bg-1.jpg) center;
+	        background-size: cover;
+            transition: all 1s;
+	    }
+	    .selectpic{
+	    	justify-content: space-around;
+	    	align-items: center;
+	    	width:px;
+	    	height:px;
+	    	color:#368;
+
+	    }
+	    .carera{
+	    	width:121px;
+	    	height:19px;
+	    	background:#000;
+	    	margin:0 auto;
+	    	border-radius:0 0 20px 20px;
+	    }
+	    .selectpic{
+	    	width:660px;
+	    	height:88px;
+	    	background: black;
+	    	margin-top:71px;
+	    	border-radius:20px 20px 0px 0px;
+	    	display: flex;
+	    }
+	    .bglist{
+	    	width:55px;
+	    	height:55px;
+	    	background: blue;
+	    	border:2px solid white;
+	    }
+	    .bglist:nth-child(1){
+	    	background:url(images/bg-1.jpg) center;
+            background-size: cover;
+	    }
+	    .bglist:nth-child(2){
+	    	background:url(images/bg-2.jpg) center;
+            background-size: cover;
+	    }	    
+	    .bglist:nth-child(3){
+	    	background:url(images/bg-3.jpg) center;
+            background-size: cover;
+	    }	    
+	    .bglist:nth-child(4){
+	    	background:url(images/bg-4.jpg) center;
+            background-size: cover;
+	    }
+	    .bglist:nth-child(5){
+	    	background:url(images/bg-5.jpg) center;
+            background-size: cover;
+	    }	    
+	    .bglist:nth-child(6){
+	    	background:url(images/bg-6.jpg) center;
+            background-size: cover;
+	    }
+	    .bglist:nth-child(7){
+	    	background:url(images/bg-7.jpg) center;
+            background-size: cover;
+	    }
+	</style>
+</head>
+<body>
+    <div class="iphonex">
+        <div class="content">
+            <div class="carera"></div>
+            <!--<img src="images/bg-1.jpg" alt="壁纸">-->
+        </div>
+        <div class="selectpic">
+            <div class="bglist"></div>
+            <div class="bglist"></div>
+            <div class="bglist"></div>
+            <div class="bglist"></div>
+            <div class="bglist"></div>
+            <div class="bglist"></div>
+            <div class="bglist"></div>
+    </div>
+    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+    <script type="text/javascript">
+    $(".bglist").click(function(){
+    	$(".content").css("background-image",$(this).css("background-image"));
+    })
+    </script>
+</body>
+</html>
